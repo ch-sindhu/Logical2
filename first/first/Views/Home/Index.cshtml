@@ -1,0 +1,49 @@
+﻿@model first.Models.Employee;
+@{
+    ViewData["Title"] = "Home Page";
+}
+@using (Html.BeginForm("Index", "Home", FormMethod.Post))
+{
+    @Html.Label("Enter Id")
+    @Html.TextBoxFor(m => m.Id)
+    <br />
+    @Html.Label("enter name")
+    @Html.TextBoxFor(m => m.Name)
+    @Html.ValidationMessageFor(m => m.Name)
+    <br />
+    @Html.Label("designation")
+    @Html.TextBoxFor(m => m.Designation)
+    <br />
+    @Html.Label("salary")
+    @Html.TextBoxFor(m => m.Salary)
+    @Html.ValidationMessageFor(m => m.Salary)
+    <br />
+    @Html.Label("email")
+    @Html.TextBoxFor(m => m.Email)
+    @Html.ValidationMessageFor(m => m.Email)
+    <br />
+    @Html.Label("enter phone")
+    @Html.TextBoxFor(m => m.Mobie)
+    @Html.ValidationMessageFor(m => m.Mobie)
+    <br />
+    @Html.Label("enter qualification")
+    @Html.TextBoxFor(m => m.Qualification)
+   
+    <br />
+    @Html.Label("enter manager name")
+    @Html.TextBoxFor(m => m.Mname)
+    
+    <br />
+    <input type="submit" value="register"/>
+
+
+
+
+
+
+
+}
+
+
+
+
